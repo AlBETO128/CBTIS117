@@ -1,0 +1,26 @@
+.back_to_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #fff;
+  border-radius: 0.4rem;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0 0 0.5rem rgb(231, 231, 231);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-30rem);
+}
+ion-icon {
+  color: rgb(51, 22, 218);
+  font-size: 30px;
+}
+.back_to_top.show {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+  transform: translateY(0rem);
+}
